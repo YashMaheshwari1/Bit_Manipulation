@@ -1,0 +1,30 @@
+public class bit_manipulation {
+    public static int setbit(int n,int i){
+        int bitmask = 1<<i;
+        return(n | bitmask);
+    }
+    public static int clearbit(int n,int i){
+        int bitmask = ~(1<<i);
+        return(n & bitmask);
+    }
+    public static int updatebit(int n,int i,int newbit){
+                                   // FIRST METHOD
+        if(newbit == 0){
+            return clearbit(n, i);
+        }
+        else{
+            return setbit(n, i);
+        }
+                                   //  SECOND METHOD 
+         n = clearbit(n, i);
+        int bitmask = newbit<<i;
+        return n | bitmask;
+    }
+    public static void main(String args[]){
+        System.out.println(updatebit(10, 1,0));
+        System.out.println(updatebit(5, 1,1));
+    }
+}
+
+OUTPUT : 8
+         7
