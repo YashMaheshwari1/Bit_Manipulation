@@ -5,9 +5,9 @@ public class bit_manipulation {
     }
     public static void main(String args[]){
         System.out.println(setbit(10, 2));
-        System.out.println(setbit(5, 2));
+        System.out.println(setbit(5, 1));
     }
 }
 
 OUTPUT : 14
-         5
+         7
