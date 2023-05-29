@@ -1,3 +1,4 @@
+
 public class bit_manipulation {
     public static int setbit(int n,int i){
         int bitmask = 1<<i;
