@@ -1,0 +1,13 @@
+public class bit_manipulation{
+   public static int addone(int n){
+        return -(~n);
+   }
+   public static void main(String args[]){
+       System.out.println(addone(8));
+       System.out.println(addone(-2));
+       System.out.println(addone(0));
+    }
+    
+    OUTPUT : 9
+             -1
+             1
