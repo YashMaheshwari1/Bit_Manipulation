@@ -1,0 +1,21 @@
+public class bit_manipulation{
+ public static int countsetbit(int n){
+        int count = 0;
+        while(n!=0){
+           if((n & 1) == 1){
+            count ++;
+           }
+           n = n>>1;
+        }
+        return count;
+    }
+    public static void main(String args[]){
+       System.out.println(countsetbit(10));
+       System.out.println(countsetbit(15));
+       System.out.println(countsetbit(16));
+    }
+}
+
+OUTPUT : 2
+         4
+         1
